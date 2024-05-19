@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fontFamily="@font/katibeh"
+    android:background="@drawable/home_bg"
+    tools:context=".PlayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="125dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/profile"
+        android:background="#F6EDDE"
+        android:contentDescription="@string/profile"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/animals"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radius"
+            android:contentDescription="@string/numbers"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/animals" />
+
+        <ImageButton
+            android:id="@+id/letters"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/radius"
+            android:layout_gravity="center"
+            android:contentDescription="@string/letters"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/letters" />
+
+        <ImageButton
+            android:id="@+id/shapes"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/radius"
+            android:contentDescription="@string/shapes"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shapes" />
+
+        <ImageButton
+            android:id="@+id/achievements"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:background="@drawable/radius"
+            android:contentDescription="@string/achievements"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/achievements" />
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/radius"
+            android:contentDescription="@string/exit"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/exit" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

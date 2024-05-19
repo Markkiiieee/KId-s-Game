@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animals_background"
+    android:orientation="vertical"
+    tools:context=".animal_game">
+
+    <LinearLayout
+        android:id="@+id/back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/katibeh"
+            android:textColor="@color/black"
+            android:text="@string/timer"/>
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/back_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/answer_bar"
+        android:layout_marginTop="130dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/ans1"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_1"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/ans2"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_1"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/ans3"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_1"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/ans4"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_1"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/MainImage"
+        android:layout_width="195dp"
+        android:layout_height="231dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="230dp"
+        android:contentDescription="@string/Question"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_1"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_Status"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="145dp"
+        android:gravity="center"
+        android:text="@string/stat"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+</RelativeLayout>

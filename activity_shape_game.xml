@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shape"
+    android:background="@drawable/home_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shape_game">
+
+    <LinearLayout
+        android:id="@+id/back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/katibeh"
+            android:textColor="@color/black"
+            android:text="@string/timer"/>
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6EDDE"
+            android:contentDescription="@string/back_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/shapeQ_layout"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/back_layout"
+        tools:layout_editor_absoluteX="-70dp">
+
+        <TextView
+            android:id="@+id/shape_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/katibeh"
+            android:text="@string/Question_Shape"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/question"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/shape_question"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="22dp"
+            android:contentDescription="@string/Question_Shape"
+            android:src="@drawable/shape_3"
+            app:layout_constraintTop_toBottomOf="@+id/shape_question"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_Status"
+            android:layout_width="231dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="106dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="@string/stat"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/answer_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeQ_layout"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/shape_choice1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="28dp"
+            android:contentDescription="@string/answer1"
+            android:foregroundGravity="center"
+            android:src="@drawable/shape_3"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/shape_choice2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="27dp"
+            android:layout_toStartOf="@+id/shape_choice3"
+            android:contentDescription="@string/answer2"
+            android:foregroundGravity="center"
+            android:src="@drawable/shape_3"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/shape_choice3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="26dp"
+            android:contentDescription="@string/answer3"
+            android:src="@drawable/shape_3"
+            tools:ignore="ImageContrastCheck" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/kid"
+        android:layout_width="100dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="250dp"
+        android:contentDescription="@string/kid"
+        android:scaleType="fitXY"
+        android:src="@drawable/kid"
+        tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+
+</LinearLayout>
